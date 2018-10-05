@@ -1,4 +1,4 @@
-package com.company.department3;
+package com.company.abstractclass;
 
 public class AerialRobot extends Robot {
 

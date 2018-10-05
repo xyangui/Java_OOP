@@ -1,6 +1,6 @@
-package com.company.department2;
+package com.company.access;
 
-import com.company.department1.Piece;
+import com.company.main.Piece;
 
 public class Bishop extends Piece {
 

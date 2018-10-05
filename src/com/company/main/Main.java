@@ -1,10 +1,11 @@
-package com.company.department1;
+package com.company.main;
 
-import com.company.department2.Bishop;
-import com.company.department3.AerialRobot;
-import com.company.department3.Robot;
+import com.company.access.Bishop;
+import com.company.abstractclass.AerialRobot;
+import com.company.interfaces.Clothing;
+import com.company.interfaces.Seatbelt;
+import com.company.interfaces.Wearable;
 
-import javax.swing.*;
 import java.util.Arrays;
 
 public class Main {
@@ -71,6 +72,28 @@ public class Main {
         //Robot robot = new Robot();//抽象类不能实例化
         AerialRobot aerialRobot = new AerialRobot();
 
+        /**接口*****************************************************/
+        Clothing clothing = new Clothing("arm");
+        clothing.wear();
+
+        Seatbelt seatbelt = new Seatbelt();
+        seatbelt.wear();
+
+        clothing.printToString();
+        seatbelt.printToString();
+
+        //多态的一种表现形式
+        Wearable[] wearableArray = new Wearable[2];
+        wearableArray[0] = clothing;
+        wearableArray[1] = seatbelt;
+
+        for(Wearable wearable : wearableArray){
+            wearable.wear();
+            wearable.takeOff();
+            wearable.printToString();
+        }
+
+        /**结束*****************************************************/
         System.out.println("Game Over");
     }
 }

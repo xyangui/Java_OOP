@@ -1,4 +1,4 @@
-package com.company.department1;
+package com.company.main;
 
 public class Piece {
 
@@ -41,5 +41,13 @@ public class Piece {
 
     public void print() {
         System.out.println("I am Piece.");
+    }
+
+    public int getRow() {
+        return this.row;
+    }
+
+    public void setRow(int row) {
+        this.row = row;
     }
 }
