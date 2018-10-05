@@ -1,10 +1,18 @@
 package com.company.department1;
 
+import com.company.department2.Bishop;
+import com.company.department3.AerialRobot;
+import com.company.department3.Robot;
+
+import javax.swing.*;
 import java.util.Arrays;
 
 public class Main {
 
     public static void main(String[] args) {
+
+        //JOptionPane.showInputDialog("input data");
+        //JOptionPane.showMessageDialog(null,"Message");
 
         /**字符串**************************************************/
         Integer iNum = 3;
@@ -35,7 +43,7 @@ public class Main {
         }
 
 
-        /**类*****************************************************/
+        /**类-封装继承*****************************************************/
         int maxAmount = Piece.BOARD_SIZE;// static 只能通过"类名."访问，属性和方法同理
 
         Piece piece = new Piece();
@@ -48,6 +56,20 @@ public class Main {
         rook = new Rook(33,44);
 
         boolean isValidMove = rook.isValidMove(55,66);
+
+        /**类-多态*****************************************************/
+        Piece[] pieceArray = new Piece[3];
+        pieceArray[0] = new Piece();
+        pieceArray[1] = new Rook();
+        pieceArray[2] = new Bishop();
+
+        for(Piece piece1 : pieceArray){
+            piece1.print();
+        }
+
+        /**类-抽象类*****************************************************/
+        //Robot robot = new Robot();//抽象类不能实例化
+        AerialRobot aerialRobot = new AerialRobot();
 
         System.out.println("Game Over");
     }

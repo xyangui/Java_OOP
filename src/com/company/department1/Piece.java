@@ -28,6 +28,7 @@ public class Piece {
         this.col = 88;
     }
 
+    //同样的方法名，不同的参数，即重载，overload，也是多态的一种表现形式
     public Piece(int row, int col) {
         this.row = row;
         this.col = col;
@@ -38,5 +39,7 @@ public class Piece {
                 col >= 0 && col < BOARD_SIZE;
     }
 
-
+    public void print() {
+        System.out.println("I am Piece.");
+    }
 }

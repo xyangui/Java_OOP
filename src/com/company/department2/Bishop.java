@@ -10,4 +10,9 @@ public class Bishop extends Piece {
         //int default_variable = this.default_variable;   //包外子类不可访问
         //int private_variable = this.private_variable;   //包外子类不可访问
     }
+
+    @Override
+    public void print() {
+        System.out.println("I am Bishop.");
+    }
 }

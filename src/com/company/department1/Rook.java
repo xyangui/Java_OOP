@@ -24,4 +24,9 @@ public class Rook extends Piece {
         // 调用父类被覆盖方法：super.方法名()，否则父类方法被覆盖
         return super.isValidMove(row, col) && ((this.row == row) || (this.col == col));
     }
+
+    @Override
+    public void print() {
+        System.out.println("I am Rook.");
+    }
 }
