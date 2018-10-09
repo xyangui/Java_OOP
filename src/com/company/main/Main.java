@@ -2,6 +2,8 @@ package com.company.main;
 
 import com.company.access.Bishop;
 import com.company.abstractclass.AerialRobot;
+import com.company.appendix.UseArrayList;
+import com.company.appendix.UseHashMap;
 import com.company.interfaces.Clothing;
 import com.company.interfaces.Seatbelt;
 import com.company.interfaces.Wearable;
@@ -92,6 +94,11 @@ public class Main {
             wearable.takeOff();
             wearable.printToString();
         }
+
+        /**ArrayList*****************************************************/
+        UseArrayList.main(5);
+        /**HashMap*****************************************************/
+        UseHashMap.main();
 
         /**结束*****************************************************/
         System.out.println("Game Over");
