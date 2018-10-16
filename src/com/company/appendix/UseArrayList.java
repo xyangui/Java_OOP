@@ -1,8 +1,6 @@
 package com.company.appendix;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.ListIterator;
+import java.util.*;
 
 public class UseArrayList {
     public static void main(int arraySize) {
@@ -51,6 +49,9 @@ public class UseArrayList {
             System.out.println(str);
             //stuArrayList.remove(stude2);  //删除当前元素元素，后面就找不到了
         }
+
+        //排序
+        Collections.sort(stuArrayList);//Student 必须实现 接口Comparable<Student>
 
 
         /**高级*****************************************************/

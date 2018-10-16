@@ -1,6 +1,6 @@
 package com.company.appendix;
 
-public class Student extends Person {
+public class Student extends Person implements Comparable<Student> {
 
     private String studentID;
     private float GPA;
@@ -32,5 +32,11 @@ public class Student extends Person {
     public boolean equals(Object obj){
         Student stu = (Student)obj;
         return studentID == stu.getStudentID();
+    }
+
+    @Override
+    public int compareTo(Student student)
+    {
+        return (int)(this.GPA - student.GPA);
     }
 }

@@ -17,6 +17,10 @@ public class UseHashMap {
         String str = hMap.get(22);//根据 key 得到 value
 
         Set<Integer> set = hMap.keySet(); //返回由 key 组成的集合
+
+        // 返回此映射中包含的映射关系的 Set 视图。 Map.Entry表示映射关系。
+        // entrySet()：迭代后可以e.getKey()，e.getValue()取key和value。返回的是Entry接口 。
+        // {"11" -> "1st"}, {"22" -> "2nd"}, {"33" -> "3rd"}的集合(key-value，或称Entry)
         Set<Map.Entry<Integer,String>> setMapEntry = hMap.entrySet();
 
         hMap.remove(22);//删除
