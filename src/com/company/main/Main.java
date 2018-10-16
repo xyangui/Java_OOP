@@ -1,5 +1,6 @@
 package com.company.main;
 
+import com.company.Algorithms.SaveFilesToDVD;
 import com.company.access.Bishop;
 import com.company.abstractclass.AerialRobot;
 import com.company.appendix.UseArrayList;
@@ -99,6 +100,9 @@ public class Main {
         UseArrayList.main(5);
         /**HashMap*****************************************************/
         UseHashMap.main();
+
+        /**Algorithms*****************************************************/
+        SaveFilesToDVD.main();
 
         /**结束*****************************************************/
         System.out.println("Game Over");
