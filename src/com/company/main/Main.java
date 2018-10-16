@@ -1,6 +1,6 @@
 package com.company.main;
 
-import com.company.Algorithms.SaveFilesToDVD;
+import com.company.algorithms.SaveFilesToDVD;
 import com.company.access.Bishop;
 import com.company.abstractclass.AerialRobot;
 import com.company.appendix.UseArrayList;
@@ -101,7 +101,7 @@ public class Main {
         /**HashMap*****************************************************/
         UseHashMap.main();
 
-        /**Algorithms*****************************************************/
+        /**algorithms*****************************************************/
         SaveFilesToDVD.main();
 
         /**结束*****************************************************/
