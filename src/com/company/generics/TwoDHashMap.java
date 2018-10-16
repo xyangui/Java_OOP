@@ -1,4 +1,6 @@
-package com.company.algorithms;
+package com.company.generics;
+
+import com.company.generics.Pair;
 
 import java.util.ArrayList;
 import java.util.HashMap;

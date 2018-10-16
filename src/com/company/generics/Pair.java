@@ -1,4 +1,4 @@
-package com.company.algorithms;
+package com.company.generics;
 
 public class Pair<K1, K2> {
     private K1 k1;
