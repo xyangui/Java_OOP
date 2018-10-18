@@ -1,5 +1,6 @@
 package com.company.main;
 
+import com.company.algorithms.RectEncryption;
 import com.company.algorithms.SaveFilesToDVD;
 import com.company.access.Bishop;
 import com.company.abstractclass.AerialRobot;
@@ -24,6 +25,14 @@ public class Main {
         iNum = Integer.parseInt(string);//字符串转整型
 
         Float fNum = 5.4f;
+
+        String str1 = "str1";
+        String str2 = "str1";
+        boolean isEqual1 = str1 == str2;
+        boolean isEqual2 = str1.equals(str2);
+        String str3 = new String("str1");
+        boolean isEqual3 = str1 == str3;
+        boolean isEqual4 = str1.equals(str3);
 
 
         /**数组**************************************************/
@@ -103,6 +112,7 @@ public class Main {
 
         /**algorithms*****************************************************/
         SaveFilesToDVD.main();
+        RectEncryption.main();
 
         /**结束*****************************************************/
         System.out.println("Game Over");

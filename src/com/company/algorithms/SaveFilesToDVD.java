@@ -40,14 +40,25 @@ public class SaveFilesToDVD {
 
         for (int i = 0; i < s.length; i++){
 
-            //填写代码
+            int required = s[i];
+            boolean isDone = false;
 
             for (int j = 0; j < remainArrayList.size(); j++){
 
-              //填写代码
+                Integer remain = remainArrayList.get(j);
+                if(remain >= required){
+
+                    remain = remain - required;
+                    remainArrayList.set(j, remain);
+                    isDone = true;
+                    break;
+                }
             }
 
-            //填写代码
+            if(!isDone){
+                Integer m = n - s[i];
+                remainArrayList.add(m);
+            }
         }
 
         numDiscs = remainArrayList.size();
