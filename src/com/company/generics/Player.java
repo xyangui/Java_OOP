@@ -47,7 +47,9 @@ public class Player {
     public int calculateTotalScore(){
         int sum = 0;
 
-        //TODO
+        for(Card card: cardArrayList){
+            sum = sum + card.getRank().getPoints();
+        }
 
         return sum;
     }
@@ -58,11 +60,19 @@ public class Player {
 
     public Card playBestCard(){
 
-        //TODO
+        if (cardArrayList.size() == 0){
+            return null;
+        }
 
         Card returnCard = cardArrayList.get(0);
 
-        //TODO
+        for(Card card: cardArrayList){
+            if(card.getRank().getPoints() > returnCard.getRank().getPoints()){
+                returnCard = card;
+            }
+        }
+
+        cardArrayList.remove(returnCard);
 
         return returnCard;
     }
