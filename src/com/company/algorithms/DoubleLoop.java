@@ -24,24 +24,30 @@ public class DoubleLoop {
         int x1Length = x1.length;
         int y1Length = y1.length;
 
+        //拿 x1 每个元素分别与 y1（或x1） 的每个元素比较
         for (int i = 0; i < x1Length; i++) {
             for (int j = 0; j < y1Length; j++) {
-                //TODO
-            }
-        }
-
-        int[] arr = {12, 23, 34, 56, 56, 56, 78};
-        int arrLength = arr.length;
-        
-        for (int i = 0; i < arrLength; i++) {
-            for (int j = 0; j < arrLength - i; j++) {
                 //arr[i]
                 //arr[j]
             }
         }
 
+        int[] arr = {12, 23, 34, 56, 56, 56, 78};
+        int arrLength = arr.length;
+
+        //每次排除一个，放在尾部
+        for (int i = 0; i < arrLength; i++) {
+            for (int j = 0; j < arrLength - i; j++) {
+                //从 0 到（长度 - i）扫描
+                //arr[i]
+                //arr[j]
+            }
+        }
+
+        //每次排除一个，放在头部
         for (int i = 0; i < arrLength; i++) {
             for (int j = i; j < arrLength; j++) {
+                //从 i 到尾部扫描
                 //arr[i]
                 //arr[j]
             }
@@ -49,6 +55,7 @@ public class DoubleLoop {
 
         for (int i = 0; i < arrLength; i++) {
             for (int j = arrLength - i; j > 0; j--) {
+                //从尾部到 i 扫描
                 //arr[i]
                 //arr[j + i -1]
             }
