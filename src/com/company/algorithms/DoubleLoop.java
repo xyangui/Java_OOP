@@ -7,13 +7,15 @@ public class DoubleLoop {
 //        c语言版本
 //        int *x1;
 //
-//        int x1Length = 4;
+//        int length = 4;
 //
-//        x1 = (int*)malloc(sizeof(int) * x1Length);
+//        x1 = (int*)malloc(sizeof(int) * length);
 //        x1[0] = 1;
 //        x1[1] = 2;
 //        x1[2] = 3;
 //        x1[3] = 4;
+//
+//        x1Length = sizeof(x1)/sizeof(int);  //判断数组元素个数
 //
 //        用完后释放内存
 //        free(x1);
