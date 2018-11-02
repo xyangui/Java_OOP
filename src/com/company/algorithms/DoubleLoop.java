@@ -17,6 +17,9 @@ public class DoubleLoop {
 //
 //        x1Length = sizeof(x1)/sizeof(int);  //判断数组元素个数
 //
+//        char *buffer;
+//        int lenth = strlen(buffer); //判断字符串长度
+//
 //        用完后释放内存
 //        free(x1);
 
