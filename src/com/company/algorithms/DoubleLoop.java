@@ -53,11 +53,12 @@ public class DoubleLoop {
             }
         }
 
+        //每次排除一个，放在头部
         for (int i = 0; i < arrLength; i++) {
-            for (int j = arrLength - i; j > 0; j--) {
+            for (int j = arrLength - 1; j > i; j--) {
                 //从尾部到 i 扫描
                 //arr[i]
-                //arr[j + i -1]
+                //arr[j]
             }
         }
 
