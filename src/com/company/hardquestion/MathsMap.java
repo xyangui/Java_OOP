@@ -1,7 +1,6 @@
 package com.company.hardquestion;
 
 import java.util.HashMap;
-import java.util.Set;
 
 public class MathsMap<K, V> implements Mathematical<MathsMap<K,V>> {
 
