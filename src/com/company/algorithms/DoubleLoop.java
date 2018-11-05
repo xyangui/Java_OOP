@@ -4,9 +4,6 @@ public class DoubleLoop {
 
     public static void main() {
 
-        EnumDemo x;
-        x = EnumDemo.demo1;
-
 //        c语言版本
 //        int *x1;
 //

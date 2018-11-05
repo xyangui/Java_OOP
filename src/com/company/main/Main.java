@@ -20,11 +20,17 @@ public class Main {
         //JOptionPane.showMessageDialog(null,"Message");
 
         /**字符串**************************************************/
-        Integer iNum = 3;
-        String string = iNum.toString();//整型转字符串
-        iNum = Integer.parseInt(string);//字符串转整型
+        Integer integer = 3;
+        String string = integer.toString();//整型转字符串
+        integer = Integer.parseInt(string);//字符串转整型
 
+        int iNum = 5;
         Float fNum = 5.4f;
+
+        String str11 = "str" + fNum + iNum; //整型，浮点型转字符串
+        String str22 = String.valueOf(iNum);//整型转字符串
+        String str33 = String.valueOf(fNum);//浮点型转字符串
+
 
         String str1 = "str1";
         String str2 = "str1";
