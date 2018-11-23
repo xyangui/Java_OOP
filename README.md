@@ -9,5 +9,5 @@ IntelliJ IDEA
 Main class: 选择 Main(com.company.main) -> 执行按钮变绿
 
 Eclipse
-在Eclipse下创建工程
-拷贝克隆的仓库内com文件夹下所有文件，到Eclipse下的src文件夹下，即可
+1. 在Eclipse下创建工程
+2. 拷贝克隆的仓库内com文件夹下所有文件，到Eclipse下的src文件夹下，即可
