@@ -1,4 +1,4 @@
-package com.company.access;
+package com.company.accesscontrol;
 
 import com.company.main.Piece;
 

@@ -2,7 +2,7 @@ package com.company.main;
 
 import com.company.algorithms.RectEncryption;
 import com.company.algorithms.SaveFilesToDVD;
-import com.company.access.Bishop;
+import com.company.accesscontrol.Bishop;
 import com.company.abstractclass.AerialRobot;
 import com.company.algorithms.TranslateDocument;
 import com.company.appendix.UseArrayList;
