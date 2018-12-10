@@ -8,7 +8,7 @@ public class UseHashMap {
     public static void main() {
 
         //HashMap<int, String> hMap = new HashMap<int, String>();//不可
-        HashMap<Integer, String> hMap = new HashMap<Integer, String>();
+        HashMap<Integer, String> hMap = new HashMap<>();
 
         hMap.put(11, "1st");//添加
         hMap.put(22, "2nd");

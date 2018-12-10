@@ -4,6 +4,7 @@ import com.company.algorithms.RectEncryption;
 import com.company.algorithms.SaveFilesToDVD;
 import com.company.access.Bishop;
 import com.company.abstractclass.AerialRobot;
+import com.company.algorithms.TranslateDocument;
 import com.company.appendix.UseArrayList;
 import com.company.appendix.UseHashMap;
 import com.company.interfaces.Clothing;
@@ -119,6 +120,8 @@ public class Main {
         /**algorithms*****************************************************/
         SaveFilesToDVD.main();
         RectEncryption.main();
+
+        TranslateDocument.main();
 
         /**结束*****************************************************/
         System.out.println("Game Over");

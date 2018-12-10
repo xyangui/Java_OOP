@@ -15,7 +15,7 @@ public class UseArrayList {
         Student student1 = new Student("111", 111);
         Student student2 = new Student("222", 222);
 
-        ArrayList<Student> stuArrayList = new ArrayList<Student>();
+        ArrayList<Student> stuArrayList = new ArrayList<>();
 
         //add
         stuArrayList.add(student1);
