@@ -14,6 +14,9 @@ public class UseHashMap {
         hMap.put(22, "2nd");
         hMap.put(33, "3rd");
 
+        HashMap<Integer, String> hMap2 = new HashMap<>();
+        hMap2.putAll(hMap);
+
         String str = hMap.get(22);//根据 key 得到 value
 
         Set<Integer> set = hMap.keySet(); //返回由 key 组成的集合

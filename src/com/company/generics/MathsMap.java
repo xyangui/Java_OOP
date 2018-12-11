@@ -4,52 +4,56 @@ import java.util.HashMap;
 
 public class MathsMap<K, V> implements Mathematical<MathsMap<K, V>> {
 
-    private HashMap<K, V> map;
+    private HashMap<K, V> hashMap;
 
     public MathsMap() {
-        this.map = new HashMap<>();
+        this.hashMap = new HashMap<>();
     }
 
     public MathsMap(HashMap<K, V> map) {
-        this.map = map;
+        this.hashMap = map;
     }
 
-    public HashMap<K, V> getMap() {
-        return map;
+    public HashMap<K, V> getHashMap() {
+        return hashMap;
     }
 
-    public void setMap(HashMap<K, V> map) {
-        this.map = map;
+    public void setHashMap(HashMap<K, V> map) {
+        this.hashMap = map;
+    }
+
+    public V get(K key){
+        return hashMap.get(key);
     }
 
     public void put(K key, V value) {
-        map.put(key, value);
+        hashMap.put(key, value);
     }
 
     public void remove(K key) {
-        map.remove(key);
+        hashMap.remove(key);
     }
 
-    public MathsMap<K, V> add(MathsMap<K, V> item) {
+    public MathsMap<K, V> add(MathsMap<K, V> other) {
 
         MathsMap<K, V> newMap = new MathsMap<>();
-        newMap.getMap().putAll(map);
+        newMap.getHashMap().putAll(hashMap);
 
-        for (K key : item.getMap().keySet()) {
-            if (!newMap.getMap().containsKey(key)) {
-                newMap.put(key, item.getMap().get(key));
+        for (K key : other.getHashMap().keySet()) {
+            if (!newMap.getHashMap().containsKey(key)) {
+                newMap.put(key, other.get(key));
             }
         }
         return newMap;
     }
 
-    public MathsMap<K, V> subtract(MathsMap<K, V> item) {
+    public MathsMap<K, V> subtract(MathsMap<K, V> other) {
 
         MathsMap<K, V> newMap = new MathsMap<>();
-        newMap.getMap().putAll(map);
+        newMap.getHashMap().putAll(hashMap);
 
-        for (K key : item.getMap().keySet()) {
-            if (newMap.getMap().containsKey(key)) {
+        for (K key : other.getHashMap().keySet()) {
+            if (newMap.getHashMap().containsKey(key)) {
                 newMap.remove(key);
             }
         }
@@ -58,12 +62,24 @@ public class MathsMap<K, V> implements Mathematical<MathsMap<K, V>> {
 
     public String toString() {
 
-        String output = "{";
-        for (K key : map.keySet()) {
-            output += key.toString() + "=" + map.get(key).toString() + ",";
+        String result = "{";
+        boolean isFirst = true;
+
+        for(K key: hashMap.keySet()) {
+            if(isFirst){
+                result = result + key.toString() + "=" + hashMap.get(key).toString();
+                isFirst = false;
+            } else {
+                result = result + "," + key.toString() + "=" + hashMap.get(key).toString();
+            }
         }
-        // remove the "," from the end of the string
-        output = output.substring(0, output.length() - 2);
-        return output + "}";
+
+//        for (K key : hashMap.keySet()) {
+//            result += key.toString() + "=" + hashMap.get(key).toString() + ",";
+//        }
+//        // remove the "," from the end of the string
+//        result = result.substring(0, result.length() - 2);
+
+        return result + "}";
     }
 }

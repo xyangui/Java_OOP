@@ -28,6 +28,9 @@ public class TranslateDocument {
 //            return;
 //        }
 
+        String str = "hello world, hello!";
+        String[] str2 = str.split(" ");
+
         ArrayList<String> input = retriveContents(filename);
         ArrayList<String> output = new ArrayList<>();
         HashMap<String, String> dict = translations.get(language);
