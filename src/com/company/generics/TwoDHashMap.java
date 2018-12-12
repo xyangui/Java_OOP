@@ -38,7 +38,7 @@ public class TwoDHashMap<K1, K2, V> {
     private HashMap<Pair<K1, K2>, V> twoDHashMap;
 
     public TwoDHashMap(){
-        twoDHashMap = new HashMap<Pair<K1, K2>, V>();
+        twoDHashMap = new HashMap<>();
     }
 
     public boolean containsKey(K1 k1, K2 k2){

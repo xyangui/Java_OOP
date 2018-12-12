@@ -7,6 +7,8 @@ import com.company.abstractclass.AerialRobot;
 import com.company.algorithms.TranslateDocument;
 import com.company.appendix.UseArrayList;
 import com.company.appendix.UseHashMap;
+import com.company.generics.CategorisedMap;
+import com.company.generics.StringCategoriser;
 import com.company.interfaces.Clothing;
 import com.company.interfaces.Seatbelt;
 import com.company.interfaces.Wearable;
@@ -112,9 +114,8 @@ public class Main {
             wearable.printToString();
         }
 
-        /**ArrayList*****************************************************/
+        /**ArrayList && HashMap*****************************************************/
         UseArrayList.main(5);
-        /**HashMap*****************************************************/
         UseHashMap.main();
 
         /**algorithms*****************************************************/
@@ -122,6 +123,15 @@ public class Main {
         RectEncryption.main();
 
         TranslateDocument.main();
+
+        /**范型*****************************************************/
+        CategorisedMap<String, String, StringCategoriser> categories
+                = new CategorisedMap<>(new StringCategoriser());
+
+        categories.put("Hulk");
+        categories.put("Hawkeye");
+        System.out.println(categories);
+        System.out.println(categories.getCategoryCount("Hammerhead"));
 
         /**结束*****************************************************/
         System.out.println("Game Over");
